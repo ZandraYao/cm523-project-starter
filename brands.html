@@ -1,0 +1,98 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bubble Life – Brands</title>
+    <meta
+      name="description"
+      content="Browse Boston bubble tea brands, search and view details and menus."
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="scripts/scripts.js" defer></script>
+  </head>
+  <body class="page-brands">
+
+    <header class="site-header">
+      <div class="container nav-container">
+        <div class="logo">Bubble Life</div>
+        <nav class="main-nav">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="brands.html" class="nav-link active">Brands</a>
+          <a href="about.html" class="nav-link">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container brands-main">
+      <section class="brands-hero">
+        <div class="hero-logo">
+          <img src="images/boba-cups.png" alt="Bubble tea cups" />
+        </div>
+        <h1>Boston Bubble Life</h1>
+
+        <div class="search-filter-row">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search..."
+            aria-label="Search brands"
+          />
+          <select id="filterNeighborhood" aria-label="Filter by neighborhood">
+            <option value="all">All neighborhoods</option>
+            <option value="Allston">Allston</option>
+            <option value="Chinatown">Chinatown</option>
+            <option value="Fenway">Fenway</option>
+            <option value="Cambridge">Cambridge</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="brands-grid-section">
+        <div id="brandGrid" class="brand-grid">
+        </div>
+        <p id="brandCount" class="count-text"></p>
+      </section>
+
+      <div id="brandModal" class="brand-modal hidden">
+        <div class="brand-modal-content">
+          <button id="modalClose" class="modal-close" aria-label="Close">✕</button>
+
+          <h2 id="modalName" class="modal-title"></h2>
+
+          <button id="modalLinkBtn" class="btn-primary modal-btn">
+            View Menu
+          </button>
+
+          <div class="modal-image-wrap">
+            <img id="modalLogo" alt="Brand logo" />
+          </div>
+
+          <p id="modalDescription" class="modal-text"></p>
+          <h3 class="modal-subtitle">Menu Highlights</h3>
+          <ul id="modalMenu" class="modal-menu"></ul>
+        </div>
+      </div>
+
+      <section id="brand-detail" class="brand-detail hidden">
+        <button id="backToGrid" class="back-btn">← Back to brands</button>
+
+        <div class="detail-card">
+          <div class="detail-logo-wrap">
+            <img id="detailLogo" alt="Brand logo" />
+          </div>
+          <h2 id="detailName"></h2>
+          <p id="detailDescription"></p>
+
+          <h3>Menu Highlights</h3>
+          <ul id="detailMenu"></ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2025 Bubble Life · Boston Boba Guide</p>
+    </footer>
+  </body>
+</html>

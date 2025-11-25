@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- PUT A TITLE IN HERE -->
-    <title>This is the demo</title>
+    <title>Bubble Life – Home</title>
     <!-- PUT A DESCRIPTION IN HERE -->
-    <meta name="description" content="describe content of the page here...." />
+    <meta name="description" content="Bubble Life is a prototype that helps users explore bubble tea brands in Boston through search and filters." />
     <!-- LINK TO NORMALIZE (FOR CONSISTENCY) -->
     <link rel="stylesheet" href="styles/normalize.css" />
     <!-- LINK TO ANY FRAMEWORK STYLES HERE-->
@@ -18,9 +18,41 @@
     <!-- LINK TO YOUR JS HERE. NOTE THE DEFER ATTRIBUTE. -->
     <script src="scripts/scripts.js" defer></script>
   </head>
-  <body>
     <!-- YOUR HTML GOES HERE -->
+  <body class="page-home">
+    <!-- NAV -->
+    <header class="site-header">
+      <div class="container nav-container">
+        <div class="logo">Bubble Life</div>
+        <nav class="main-nav">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="brands.html" class="nav-link">Brands</a>
+          <a href="about.html" class="nav-link">About</a>
+        </nav>
+      </div>
+    </header>
 
+    <main class="container home-main">
+      <section class="home-hero">
+        <div class="home-text">
+          <h1>Find Favorite Bubble</h1>
+          <p class="lead">
+            Discover bubble tea shops in Boston and compare brands before your next drink run.
+          </p>
+          <a href="brands.html" class="btn-primary">Get Started</a>
+        </div>
+
+        <div class="home-visual">
+          <img src="images/background 1.png" alt="Background illustration" />
+          <img src="images/background 2.png" alt="Background illustration" />
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2025 Bubble Life · Boston Boba Guide</p>
+    </footer>
+  
     <!-- YOUR EXTERNAL PLUG-IN MAY ASK YOU TO PUT A SCRIPT TAG HERE. -->
   </body>
 </html>
